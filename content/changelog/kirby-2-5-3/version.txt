@@ -14,8 +14,12 @@ Text:
 
 ## Panel
 
-- The displayed columns in the table style of the (sheet: panel-fields/structure) field can now configured [#666](https://github.com/getkirby/panel/issues/666) [#809](https://github.com/getkirby/panel/issues/809)
+- The displayed columns in the table style of the (sheet: panel-fields/structure) field can now be configured [#666](https://github.com/getkirby/panel/issues/666) [#809](https://github.com/getkirby/panel/issues/809)
+- Added support for (link: docs/panel/blueprints/form-fields#optional-field-values-in-non-default-languages text: optionally translatable fields) [#813](https://github.com/getkirby/panel/pull/813)
 - Fields with field options like the (sheet: panel-fields/select) field now support the `visibleGrandchildren` and `invisibleGrandchildren` options [#913](https://github.com/getkirby/panel/issues/913)
+- Added support for (link: docs/developer-guide/panel/fields#adding-field-assets text: custom field assets) [#1060](https://github.com/getkirby/panel/issues/1060)
+- The Panel search now finds users by their first and last names [#1055](https://github.com/getkirby/panel/pull/1055)
+- The placeholder for empty structure fields is no longer draggable [#1054](https://github.com/getkirby/panel/issues/1054)
 
 ## Core
 

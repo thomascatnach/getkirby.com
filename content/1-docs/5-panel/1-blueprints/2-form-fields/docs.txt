@@ -229,6 +229,7 @@ fields:
       de: Optionen
       en: Options
 ```
+
 ## Prevent field values in non-default languages
 
 Sometimes, you  only want to set a value in the default language and prevent changes to the value in all non-default languages. You can do so by setting the `translate` option of a field to `false` (default is `true`).
@@ -244,3 +245,21 @@ fields:
 When set to `false`, the field will automatically be made read-only in all non-default languages.
 
 Since Kirby 2.2.3, the contents of an untranslatable field will be emptied in all languages but the default language.
+
+<since v="2.5.3">
+## Optional field values in non-default languages
+
+Another possible value for the `translate` option is `optional`:
+
+```
+fields:
+  in_stock:
+    label: In stock
+    type: number
+    translate: optional
+```
+
+The Panel won't pre-fill the field with the value from the default language in this case.
+
+Your templates will still fall back to the default value however. You can use (sheet: field-methods/isTranslated) to check if that happened.
+</since>

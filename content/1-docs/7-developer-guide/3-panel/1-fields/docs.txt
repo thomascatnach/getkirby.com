@@ -116,7 +116,9 @@ A field can have additional assets located in an `assets` subfolder. The recomme
 /site/fields/{fieldname}/assets/fonts
 ```
 
-Assets must be defined in your field class to be loaded correctly.
+### CSS and JS assets
+
+CSS and JS assets are loaded automatically and must be defined in your field class:
 
 ```php
 class ExampleField extends BaseField {
@@ -135,3 +137,18 @@ class ExampleField extends BaseField {
 
 }
 ```
+
+<since v="2.5.3">
+### Other assets
+
+Other asset types like fonts and images are not loaded automatically. You can however refer to those from your CSS files or from your field's HTML template.
+
+Field assets are available at the following URL:
+
+```
+/panel/plugins/<field name>/<asset type>/<filename>
+
+e.g.
+/panel/plugins/example/images/logo.svg
+```
+</since>
