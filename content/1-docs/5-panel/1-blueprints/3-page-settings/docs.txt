@@ -92,7 +92,7 @@ This setting will prevent panel users from deleting pages that use this blueprin
 
 ```
 …
-deletable: false
+delete: false
 …
 ```
 
