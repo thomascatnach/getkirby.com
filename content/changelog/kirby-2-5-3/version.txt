@@ -18,12 +18,17 @@ Text:
 - Added support for (link: docs/panel/blueprints/form-fields#optional-field-values-in-non-default-languages text: optionally translatable fields) [#813](https://github.com/getkirby/panel/pull/813)
 - Fields with field options like the (sheet: panel-fields/select) field now support the `visibleGrandchildren` and `invisibleGrandchildren` options [#913](https://github.com/getkirby/panel/issues/913)
 - Added support for (link: docs/developer-guide/panel/fields#adding-field-assets text: custom field assets) [#1060](https://github.com/getkirby/panel/issues/1060)
+- Re-implement default values for the (sheet: panel-fields/structure) field [#956](https://github.com/getkirby/panel/issues/956)
 - The Panel search now finds users by their first and last names [#1055](https://github.com/getkirby/panel/pull/1055)
 - The placeholder for empty structure fields is no longer draggable [#1054](https://github.com/getkirby/panel/issues/1054)
+- Fixed broken preview for non-image files [#1020](https://github.com/getkirby/panel/pull/1020)
+- Respect `sortable` option for files again [#1012](https://github.com/getkirby/panel/pull/1012)
 
 ## Core
 
 - Support for (link: docs/templates/thumbnails#thumb-presets text: thumb presets) in the config file [#445](https://github.com/getkirby/kirby/issues/445)
+- Multilang: Correctly detect the intended template if only a content file of a non-default language exists [#490](https://github.com/getkirby/kirby/issues/490)
+- Normalize field names when updating content using (sheet: page/update) [#533](https://github.com/getkirby/kirby/issues/533)
 
 ## Toolkit
 
