@@ -166,6 +166,34 @@ c::set('routes', array(
 
 ```
 
+## Multiple routes with different actions
+
+If you need multiple routes, add them within the routes array. Do not use multiple `c::set()` commands, otherwise the other routes will be ignored.
+
+```
+c::set('routes', array(
+  array(
+    'pattern' => 'my/first/url',
+    'action'  => function() {
+      // do something here when the URL matches the pattern above
+    }
+  ),
+  array(
+    'pattern' => 'my/second/url',
+    'action'  => function() {
+      // do something else here when the URL matches the pattern above
+    }
+  ),
+  array(
+    'pattern' => 'my/third/url',
+    'action'  => function() {
+      // do another thing here when the URL matches the pattern above
+    }
+  )
+
+));
+```
+
 <since v="2.4.0">
 ## Hosts
 
@@ -263,7 +291,3 @@ c::set('routes', array(
   )
 ));
 ```
-
-
-
-
