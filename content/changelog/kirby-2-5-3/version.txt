@@ -18,7 +18,7 @@ Text:
 - Added support for (link: docs/panel/blueprints/form-fields#optional-field-values-in-non-default-languages text: optionally translatable fields) [#813](https://github.com/getkirby/panel/pull/813)
 - Fields with field options like the (sheet: panel-fields/select) field now support the `visibleGrandchildren` and `invisibleGrandchildren` options [#913](https://github.com/getkirby/panel/issues/913)
 - Added support for (link: docs/developer-guide/panel/fields#adding-field-assets text: custom field assets) [#1060](https://github.com/getkirby/panel/issues/1060)
-- Re-implement default values for the (sheet: panel-fields/structure) field [#956](https://github.com/getkirby/panel/issues/956)
+- Re-implemented default values for the (sheet: panel-fields/structure) field [#956](https://github.com/getkirby/panel/issues/956)
 - The Panel search now finds users by their first and last names [#1055](https://github.com/getkirby/panel/pull/1055)
 - The placeholder for empty structure fields is no longer draggable [#1054](https://github.com/getkirby/panel/issues/1054)
 - Fixed broken preview for non-image files [#1020](https://github.com/getkirby/panel/pull/1020)
@@ -38,4 +38,5 @@ Text:
 - Added (toolkit: url/un-idn) method [#232](https://github.com/getkirby/toolkit/issues/232)
 - Redirects with `header::redirect()` or the (toolkit: helpers/go) helper now work with internationalized domain names [#232](https://github.com/getkirby/toolkit/issues/232)
 - Added MIME type for `.ics` files [#231](https://github.com/getkirby/toolkit/issues/231)
+- Improved reliability of the (sheet: validators/date) validator
 - (toolkit: helpers/size) helper can now be used to count objects like a `Collection`/`Pages` object [#244](https://github.com/getkirby/toolkit/issues/244)
