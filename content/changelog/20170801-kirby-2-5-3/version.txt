@@ -2,11 +2,11 @@ Title: Kirby 2.5.3
 
 ----
 
-Date: 
+Date: 2017-08-01
 
 ----
 
-Download: 
+Download: https://download.getkirby.com/kirby-2.5.3.zip
 
 ----
 
