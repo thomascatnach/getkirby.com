@@ -12,6 +12,10 @@ Download: https://download.getkirby.com/kirby-2.5.3.zip
 
 Text:
 
+**Update**: This release contains a small bug in the Panel. (link: ../kirby-2-5-4 text: Please use 2.5.4) instead to get the fixed version.
+
+---
+
 ## Panel
 
 - The displayed columns in the table style of the (sheet: panel-fields/structure) field can now be configured [#666](https://github.com/getkirby/panel/issues/666) [#809](https://github.com/getkirby/panel/issues/809)
