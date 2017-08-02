@@ -12,4 +12,4 @@ Download: https://download.getkirby.com/kirby-2.5.4.zip
 
 Text:
 
-This release fixes a bug in the Panel where visiting the site options page wouldn't work. This issue was introduced in (link: changelog/kirby-2-5-3 text: Kirby 2.5.3).
+This release fixes two bugs in the Panel where visiting the site options page wouldn't work and saving a page would raise an error on older PHP versions. Those issues were introduced in (link: changelog/kirby-2-5-3 text: Kirby 2.5.3).
