@@ -164,7 +164,7 @@ If you don't define a column width the field will span the entire width of the f
 
 Most fields can have custom icons, which are set by the `icon` parameter. Custom icons can help to make your forms easier to scan.
 
-Icons are provided by the (link: http://fontawesome.io/ text: fontawesome icon set). You can find a list of all available icons here: <http://fontawesome.io/icons></http:>
+Icons are provided by the (link: http://fontawesome.io/ text: fontawesome icon set). You can find a list of all available icons here: <http://fontawesome.io/icons>
 
 To define your custom icon, just search for the icon you'd like to add to a field and use its css selector without the `fa-` prefix
 
