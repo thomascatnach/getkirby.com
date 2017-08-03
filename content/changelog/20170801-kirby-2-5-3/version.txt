@@ -12,7 +12,7 @@ Download: https://download.getkirby.com/kirby-2.5.3.zip
 
 Text:
 
-**Update**: This release contains a small bug in the Panel. (link: ../kirby-2-5-4 text: Please use 2.5.4) instead to get the fixed version.
+**Update**: This release contains a few small bugs in the Panel. (link: ../kirby-2-5-4 text: Please use 2.5.4) instead to get the fixed version.
 
 ---
 

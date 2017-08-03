@@ -1,0 +1,21 @@
+Title: Kirby 2.5.5
+
+----
+
+Date: 
+
+----
+
+Download: 
+
+----
+
+Text:
+
+## Panel
+
+- Fixed bug in the (sheet: panel-fields/structure) field that would crash the Panel if a structure field without default values was used [#1080](https://github.com/getkirby/panel/issues/1080)
+
+## Core
+
+## Toolkit
