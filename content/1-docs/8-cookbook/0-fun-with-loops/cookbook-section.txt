@@ -45,10 +45,10 @@ Especially in such "Menu situations" you often need to find out which is the fir
 ```php
 <nav>
   <ul>
-    <li><a href="/">Home</li>
-    <li><a href="/about">About us</li>
-    <li><a href="/projects">Projects</li>
-    <li class="last"><a href="/contact">Contact</li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About us</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li class="last"><a href="/contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -71,7 +71,7 @@ $index = 0;
 <nav>
  <ul>
    <?php foreach($items as $item): $index++; ?>
-   <li<?php if($count == $index) echo ' class="last"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></li>
+   <li<?php if($count == $index) echo ' class="last"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
@@ -139,7 +139,7 @@ $last  = $items->last();
 <nav>
  <ul>
    <?php foreach($items as $item): ?>
-   <li<?php if($item == $last) echo ' class="last"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></li>
+   <li<?php if($item == $last) echo ' class="last"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
@@ -158,7 +158,7 @@ $first = $items->first();
 <nav>
  <ul>
    <?php foreach($items as $item): ?>
-   <li<?php if($item == $first) echo ' class="first"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></li>
+   <li<?php if($item == $first) echo ' class="first"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
@@ -194,7 +194,7 @@ $needle = $items->findBy('title', 'Contact');
 <nav>
  <ul>
    <?php foreach($items as $item): ?>
-   <li<?php if($item == $needle) echo ' class="special-item"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></li>
+   <li<?php if($item == $needle) echo ' class="special-item"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
