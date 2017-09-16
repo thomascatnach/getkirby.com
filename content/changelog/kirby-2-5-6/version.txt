@@ -1,0 +1,25 @@
+Title: Kirby 2.5.6
+
+----
+
+Date: 
+
+----
+
+Download: 
+
+----
+
+Text:
+
+## Panel
+
+- The site blueprint can now (link: docs/panel/blueprints/subpages-settings#limit-displayed-subpages text: limit the displayed pages) in the pages dashboard widget [#1036](https://github.com/getkirby/panel/pull/1036)
+- Using the email button in the (sheet: panel-fields/textarea) field now creates a Kirbytag even if no text is passed to make use of the entity encoding [#1096](https://github.com/getkirby/panel/issues/1096)
+
+## Kirby
+
+- Prevent loading order issues if a `Site` object is created from inside a configuration file [#253](https://github.com/getkirby/toolkit/issues/253)
+
+## Toolkit
+
