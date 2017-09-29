@@ -75,6 +75,8 @@ echo param('tag');
 
 ```
 
+Note that you have to use a semicolon instead of a colon on Windows systems. In your code, you can use the `url::paramsToString()` method to make sure that the resulting URL is compatible with both Linux and Windows servers.
+
 So what we need to do is to replace `'design'` in our articles example above with the param function.
 
 ```php
