@@ -27,3 +27,4 @@ Params: -
 ----
 
 Text: Please note that this method requires the PHP `intl` extension. If it is not installed, this function will return the passed URL without any changes.
+The same will happen if the `intl` extension is installed, but does not work properly.
