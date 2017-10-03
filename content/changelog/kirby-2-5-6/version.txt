@@ -19,12 +19,14 @@ Text:
 - Enforce deletion of invalid uploaded files
 - Changing the page template on a multilang site now cleans up old files properly, even if the default language isn't defined first in the `config.php` [#1077](https://github.com/getkirby/panel/issues/1077)
 - Fixed an issue with structure fields not updating properly in the Panel in multilang sites [#936](https://github.com/getkirby/panel/issues/936)
+- The `$oldPage`/`$oldFile` object in hooks is now more reliably using the actual old values [#1025](https://github.com/getkirby/panel/issues/1025)
 
 ## Kirby
 
 - Improvements to user role fallback if the user has an invalid role [#603](https://github.com/getkirby/kirby/issues/603)
 - Improved redirect for page URLs without language code (multilang) [#541](https://github.com/getkirby/kirby/issues/541)
 - Prevent loading order issues if a `Site` object is created from inside a configuration file [#253](https://github.com/getkirby/toolkit/issues/253)
+- Page, File and User objects are now cloned recursively in memory when cloning using `$page = clone $page` [#1025](https://github.com/getkirby/panel/issues/1025)
 
 ## Toolkit
 
