@@ -12,12 +12,17 @@ Download:
 
 Text:
 
+This minor release fixes some bugs and adds a few enhancements.
+
+---
+
 ## Panel
 
 - The site blueprint can now (link: docs/panel/blueprints/subpages-settings#limit-displayed-subpages text: limit the displayed pages) in the pages dashboard widget [#1036](https://github.com/getkirby/panel/pull/1036)
 - Using the email button in the (sheet: panel-fields/textarea) field now creates a Kirbytag even if no text is passed to make use of the entity encoding [#1096](https://github.com/getkirby/panel/issues/1096)
 - Enforce deletion of invalid uploaded files
 - Changing the page template on a multilang site now cleans up old files properly, even if the default language isn't defined first in the `config.php` [#1077](https://github.com/getkirby/panel/issues/1077)
+- Ensure that content is saved in the correct language
 - Fixed an issue with structure fields not updating properly in the Panel in multilang sites [#936](https://github.com/getkirby/panel/issues/936)
 - The `$oldPage`/`$oldFile` object in hooks is now more reliably using the actual old values [#1025](https://github.com/getkirby/panel/issues/1025)
 
