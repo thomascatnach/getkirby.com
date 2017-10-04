@@ -1,12 +1,12 @@
-Title: Kirby 2.5.6
+Title: Kirby 2.5.6 RC-1
 
 ----
 
-Date: 
+Date:
 
 ----
 
-Download: 
+Download: https://download.getkirby.com/rc/kirby-2.5.6-RC-1.zip
 
 ----
 
