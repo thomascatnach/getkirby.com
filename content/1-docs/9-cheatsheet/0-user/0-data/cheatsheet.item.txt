@@ -24,3 +24,5 @@ Text:
 ```php
 <?php echo $site->user('bastian')->data() ?>
 ```
+
+**Please note**: This method returns the *raw data* from the user's account file. Some of that data (like the ID of the role) might be parsed differently by the respective user methods.

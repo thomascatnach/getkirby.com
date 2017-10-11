@@ -92,3 +92,28 @@ c::set('roles', [
   ]
 ]);
 ```
+
+<since v="2.5.6">
+## Users with invalid roles
+
+If a user's account file contains an invalid role (a role that doesn't exist), Kirby used to fall back to the default role.
+Because of the new permissions system, this might lead to a situation where a user has more permissions than he would have with his intended role.
+
+Since version 2.5.6, Kirby assigns a **role called `nobody`** to users with an invalid role. This role can't be defined by the developer. It is always set to a role without any permissions whatsoever.
+The `nobody` role can also not be selected in the Panel, it just means that a user has an invalid role. You can't save such a user in the Panel without actively choosing a new role for that user.
+
+### Excursion: Creating a role without permissions
+
+If you need a role without permissions yourself, it is easily possible to define a custom role like this:
+
+```php
+<?php
+
+return [
+  'name'        => 'Permissionless',
+  'permissions' => false
+];
+```
+
+In fact that's exactly how the `nobody` role works. But if you define a custom role like this, make sure not to call it `nobody` as that name is reserved by Kirby's internal role (which can't be overwritten and which can't be selected in the Panel).
+</since>
