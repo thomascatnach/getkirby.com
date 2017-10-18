@@ -3,13 +3,9 @@
 c::set('markdown.extra', true);
 c::set('cache.driver', 'file');
 
-// c::set('price.next.fellowship', 29);
-// c::set('price.next.upgrade', 49);
-// c::set('price.next.pro', 99);
-
-c::set('price.next.fellowship', '23.20');
-c::set('price.next.upgrade', '39.20');
-c::set('price.next.pro', '79.20');
+c::set('price.next.fellowship', 29);
+c::set('price.next.upgrade', 49);
+c::set('price.next.pro', 99);
 
 c::set('routes', array(
   array(

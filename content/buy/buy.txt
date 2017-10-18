@@ -25,8 +25,8 @@ Commercial:
 ----
 PersonalPrice: €15 / $17
 ----
-PersonalDiscount: €12 / $13.60
+PersonalDiscount:
 ----
 CommercialPrice: €79 / $89
 ----
-CommercialDiscount: €63.20 / $71
+CommercialDiscount:
