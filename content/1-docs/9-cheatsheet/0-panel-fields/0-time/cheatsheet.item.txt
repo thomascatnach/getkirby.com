@@ -21,6 +21,18 @@ fields:
     type: time
 ```
 
+### Format
+
+You can choose between the 12 hour (AM/PM) and the 24 hour format. The default is the 24 hour format.
+
+```
+fields:
+  time:
+    label: Time
+    type: time
+    format: 12
+```
+
 ### Intervals
 
 Intervals between selectable options are defined in minutes. The default is 60 minutes.
