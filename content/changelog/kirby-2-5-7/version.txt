@@ -1,0 +1,27 @@
+Title: Kirby 2.5.7
+
+----
+
+Date: 
+
+----
+
+Download: 
+
+----
+
+Text:
+
+## Panel
+
+
+
+## Kirby
+
+
+
+## Toolkit
+
+- Fixed infinite recursion in the (toolkit: folder/copy) method when copying a folder into itself [#258](https://github.com/getkirby/toolkit/pull/258)
+- Don't trim trailing slashes in URL paths when using the (toolkit: url/path) and (toolkit: url/build) methods [#259](https://github.com/getkirby/toolkit/issues/259)
+- IDN URL methods: Upgrade to UTS #46 encoding variant to avoid the deprecation warnings in PHP 7.2 [#608](https://github.com/getkirby/kirby/pull/608)
