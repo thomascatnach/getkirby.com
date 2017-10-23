@@ -18,7 +18,7 @@ Text:
 
 ## Kirby
 
-
+- Don't redirect to the homepage if an invalid URL is accessed in multilang sites with no language at the domain root [#609](https://github.com/getkirby/kirby/issues/609)
 
 ## Toolkit
 
