@@ -21,3 +21,26 @@ fields:
     type: user
 ```
 
+<since v="2.5.7">
+### Default values
+
+The default value of the user field is the current user. But you can change this default value to any existing user:
+
+```
+fields:
+  author:
+    label: Author
+    type: user
+    default: johndoe
+```
+
+You can also disable the default value completely. The default then is "no user":
+
+```
+fields:
+  author:
+    label: Author
+    type: user
+    default: false
+```
+</since>
