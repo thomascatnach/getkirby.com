@@ -8,9 +8,10 @@
    --><li>
         <div class="text">
           <h2 class="delta"><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></h2>
-          <?php if($item->category()) : ?>
-            <p class="text small">Category: <a href="<?php echo $page->url() . '/category:' . urlencode($item->category()) ?>"<?php e(param('category') == $item->category(), ' class="is-active"', '')?>><?php echo $item->category()->html() ?></a></p>
-          <?php endif; ?>
+
+          <?php if($item->category()): ?>
+          <p class="text small">Category: <a href="<?php echo $page->url() . '/category:' . urlencode($item->category()) ?>"><?php echo $item->category()->html() ?></a></p>
+          <?php endif ?>
 
           <?php echo kirbytext($item->description()) ?>
         </div>
