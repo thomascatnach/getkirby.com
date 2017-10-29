@@ -9,8 +9,13 @@
         <div class="text">
           <h2 class="delta"><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></h2>
 
-          <?php if($item->category()): ?>
-          <p class="text small">Category: <a href="<?php echo $page->url() . '/category:' . urlencode($item->category()) ?>"><?php echo $item->category()->html() ?></a></p>
+          <?php if($item->category()->isNotEmpty()): ?>
+          <p class="text small">
+            Category:
+            <?php foreach($item->category()->split(',') as $category): ?>
+            <a href="<?php echo $page->url() . '/category:' . urlencode($category) ?>"><?php echo html($category) ?></a>
+            <?php endforeach ?>
+          </p>
           <?php endif ?>
 
           <?php echo kirbytext($item->description()) ?>
