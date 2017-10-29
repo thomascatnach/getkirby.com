@@ -1,6 +1,1 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
-<g id="icomoon-ignore">
-	<line stroke-width="1" x1="" y1="" x2="" y2="" stroke="#449FDB" opacity=""></line>
-</g>
-	<path d="M250 281.25l125-125h-93.75v-125h-62.5v125h-93.75zM363.636 230.113l-35.029 35.030 126.992 47.356-205.599 76.669-205.599-76.669 126.992-47.356-35.030-35.030-136.363 51.137v125l250 93.75 250-93.75v-125z" opacity="1" visibility="false" fill="#212121"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><path d="M250 281.25l125-125h-93.75v-125h-62.5v125H125zm113.636-51.137l-35.029 35.03 126.992 47.356L250 389.168 44.401 312.499l126.992-47.356-35.03-35.03L0 281.25v125L250 500l250-93.75v-125z" visibility="false" fill="#212121"/></svg>
