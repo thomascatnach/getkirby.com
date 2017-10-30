@@ -29,7 +29,11 @@ RewriteBase /my-subfolder
 
 ## Broken data after saving
 
-Your content files seem to be corrupted after you tried to save a page in the panel? Make sure the PHP mbstring extension is installed on your server. A missing extension leads to broken data in text files.
+Your content files seem to be corrupted after you tried to save a page in the panel? Make sure the PHP mb_string extension is installed on your server. A missing extension leads to broken data in text files.
+
+## Error 500 when trying to access Panel
+
+Make sure that the PHP mb_string extension is installed/enabled.
 
 ## Broken panel links
 
