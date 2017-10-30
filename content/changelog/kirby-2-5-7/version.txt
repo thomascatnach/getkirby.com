@@ -14,7 +14,8 @@ Text:
 
 ## Panel
 
-- Allow users with the (sheet: permissions/panel-user-update) permissions to update users even if they are not admins [#1097](https://github.com/getkirby/panel/issues/1097)
+- Better styling for readonly (sheet: panel-fields/structure) fields in the table style [#1111](https://github.com/getkirby/panel/issues/1111) [#1114](https://github.com/getkirby/panel/issues/1114)
+- Allow users with the (sheet: permissions/panel-user-update) permission to update users even if they are not admins [#1097](https://github.com/getkirby/panel/issues/1097)
 - Support replacing a user avatar with one of a different file type [#1103](https://github.com/getkirby/panel/issues/1103)
 - Fix file upload issues in IE 11 [#1042](https://github.com/getkirby/panel/issues/1042)
 - Implement `default` option for (sheet: panel-fields/user) field [#810](https://github.com/getkirby/panel/issues/810)
