@@ -12,7 +12,7 @@ Download: https://download.getkirby.com/kirby-2.5.7.zip
 
 Text:
 
-Kirby 2.5.7 is bug fix release with a few additional smaller enhancements.
+Kirby 2.5.7 is a bug fix release with a few additional smaller enhancements.
 
 This is also a **security release**. It fixes two issues that have been reported to us recently:
 
