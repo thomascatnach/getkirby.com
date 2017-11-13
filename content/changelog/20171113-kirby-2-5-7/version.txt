@@ -12,14 +12,14 @@ Download: https://download.getkirby.com/kirby-2.5.7.zip
 
 Text:
 
-Kirby 2.5.7 is another bug fix release with a few additional smaller enhancements.
+Kirby 2.5.7 is bug fix release with a few additional smaller enhancements.
 
 This is also a **security release**. It fixes two issues that have been reported to us recently:
 
 - A **directory traversal** issue that would allow attackers to read any file of your Kirby installation via the (link: docs/developer-guide/plugins/assets text: plugin assets feature) or the (link: docs/developer-guide/panel/fields#adding-field-assets text: field assets feature).
 	This issue **affects all Kirby sites**.
 - A Cross-site Scripting (**XSS**) attack in the Panel that occurs when displaying specially prepared SVG images that have been uploaded as a content file.
-	This issue **only affects you** if not all of your Panel users can be trusted or if you use a file upload form in the front-end that allows visitors to upload SVG files. 
+	This issue **only affects you** if not all of your Panel users can be trusted or if you use a file upload form in the front-end that allows visitors to upload SVG files.
 
 We take security very seriously, which is why we are also releasing the patch updates (link: changelog/kirby-2-3-3 text: 2.3.3) and (link: changelog/kirby-2-4-2 text: 2.4.2) for those who can't easily update their sites to 2.5.
 
