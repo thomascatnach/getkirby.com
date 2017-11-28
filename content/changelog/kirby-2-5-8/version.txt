@@ -1,0 +1,28 @@
+Title: Kirby 2.5.8
+
+----
+
+Date: 
+
+----
+
+Download: 
+
+----
+
+Text:
+
+## Panel
+
+- Added support for unsaved changes temporary storage to the site options page [#1105](https://github.com/getkirby/panel/issues/1105)
+- If the (sheet: panel-fields/checkbox) field is set to `disabled` and/or `readonly`, it is now properly disabled [#1118](https://github.com/getkirby/panel/issues/1118)
+- Restored compatibility with PHP 5.4 [#1124](https://github.com/getkirby/panel/issues/1124)
+
+## Kirby
+
+- Custom Markdown and Smartypants parser components now have access to the `Field` object [#611](https://github.com/getkirby/kirby/pull/611)
+
+## Toolkit
+
+- Deprecated `html::shiv()` method [#261](https://github.com/getkirby/toolkit/issues/261)
+- Fixed double slashes when combining a URL that ends on a slash with params in (toolkit: url/build); fixes pagination URLs [#620](https://github.com/getkirby/kirby/issues/620)
