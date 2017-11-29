@@ -24,5 +24,7 @@ Text:
 
 ## Toolkit
 
-- Deprecated `html::shiv()` method [#261](https://github.com/getkirby/toolkit/issues/261)
 - Fixed double slashes when combining a URL that ends on a slash with params in (toolkit: url/build); fixes pagination URLs [#620](https://github.com/getkirby/kirby/issues/620)
+- Improved detection reliability in (toolkit: str/encoding) [#264](https://github.com/getkirby/toolkit/issues/264)
+- Don't convert the string encoding in (toolkit: str/convert) if the encoding is already correct [#264](https://github.com/getkirby/toolkit/issues/264)
+- Deprecated `html::shiv()` method [#261](https://github.com/getkirby/toolkit/issues/261)
