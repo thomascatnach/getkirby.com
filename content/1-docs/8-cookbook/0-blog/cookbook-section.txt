@@ -12,7 +12,7 @@ Category: website structure
 
 Text:
 
-In this section you’ll learn how to build a blog with Kirby. We’ll  start with a very basic and minimalistic blog here. You will find more advanced stuff in related sections.
+In this section you’ll learn how to build a blog with Kirby. We’ll start with a very basic and minimalistic blog here. You will find more advanced stuff in related sections.
 
 
 ## Setting up the content
@@ -86,7 +86,7 @@ a list of all articles.
 
 ```
 
-#### Breakin it down a bit...
+#### Breaking it down a bit…
 
 First we include our header and main menu snippets and start the content section.
 By giving the content section a second `blog` selector we can easily style it later in
@@ -218,7 +218,7 @@ The rest is super straight forward. Add the title of your article and the full t
 You might also want to add a back link:
 
 ```php
-<a href="<?php echo url('blog') ?>">Back...</a>
+<a href="<?php echo url('blog') ?>">Back…</a>
 ```
 
 which will take your visitors back to the article list.
@@ -235,12 +235,12 @@ To add an article intro which you can display and maybe style differently from t
     ----
     Intro: This is a nice article intro. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     ----
-    Text: [...]
+    Text: […]
 
 
 ### Template adjustments
 
-Now we are going to implement the intro in the blog's overview loop (instead of an excerpt) like this:
+Now we are going to implement the intro in the blog’s overview loop (instead of an excerpt) like this:
 
 ```php
 <?php snippet('header') ?>
@@ -300,8 +300,8 @@ How to add authors to your articles:
 Externals:
 
 Baseblog:
-  text: Baseblog — A solid and clean blog theme for Kirby
-  link: http://baseblog.sashtown.de
+    text: Baseblog — A solid and clean blog theme for Kirby
+    link: http://baseblog.sashtown.de
 
 ----
 Docs:
@@ -319,7 +319,7 @@ comments:
     link: docs/cookbook/comments
 
 pagination:
-    text: How to add a pagination to your blog
+    text: How to add pagination to your blog
     link: docs/cookbook/pagination
 
 prevnext:
@@ -339,7 +339,7 @@ art direction:
     link: docs/cookbook/art-directed-blog-posts
 
 custom post types:
-    text: How to add customs post types to your blog
+    text: How to add custom post types to your blog
     link: docs/cookbook/custom-post-types
 
 related:
