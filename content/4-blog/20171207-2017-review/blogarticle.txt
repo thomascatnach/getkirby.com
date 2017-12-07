@@ -49,7 +49,7 @@ So many positive things suddenly started to happen.
 
 2017 has been the first year with regular Kirby workshop gigs for companies and the first public workshop ever with 20 attendees in Berlin. (link: https://beyondtellerrand.com/events/munich-2018/workshops/kirby text: The second public **workshop** will be **in Munich in January**) and I hope that there will be many more to come.
 
-I also finally had time to start working on Kirby 3. This lead to the idea of the **(link: https://getkirby.com/text text: Kirby Next project)** — something I could have never done in the years before — and the response was just mind-blowing. More than 200 supporters are now backing and following the development of Kirby 3.
+I also finally had time to start working on Kirby 3. This lead to the idea of the **(link: next text: Kirby Next project)** — something I could have never done in the years before — and the response was just mind-blowing. More than 200 supporters are now backing and following the development of Kirby 3.
 
 I started recording (almost) weekly live-streams for our supporters, which is so much fun and so rewarding. The discussions and feedback on our Next Slack channel are fantastic and it feels like the personal connection to the Kirby community and our plugin developers is getting a lot closer.
 
