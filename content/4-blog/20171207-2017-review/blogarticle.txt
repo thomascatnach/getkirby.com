@@ -21,7 +21,7 @@ Kosmos-Subscription: on
 Text:
 
 
-*Disclaimer: this is not a typcial business letter with nice stats and revenue details about this year. It's a rather personal note. I hope you still enjoy it.*
+*Disclaimer: this is not a typical business letter with nice stats and revenue details about this year. It's a rather personal note. I hope you still enjoy it.*
 
 ***
 
@@ -29,7 +29,7 @@ When December comes and the year is about to end I always get in this melancholy
 
 I have to say, that being a freelancer for almost 16 years got me to a point where every year almost felt the same in terms of the work I've done. Maybe a few more or less successful projects here or there or some exciting new adventures, but it got very regular over the years. Not boring, but regular. I guess that's a good thing.
 
-2016 and 2017 have been very different though! Last year has been super exciting for my family. Our second son was born and we moved into our new house. Both were huge steps and I thought that those were enough to just sit down and relax afterwards for a while. But for some reason the opposite happend.
+2016 and 2017 have been very different though! Last year has been super exciting for my family. Our second son was born and we moved into our new house. Both were huge steps and I thought that those were enough to just sit down and relax afterwards for a while. But for some reason the opposite happened.
 
 In January this year I made the decision over night to leave all my client work behind and start full time for Kirby.
 
@@ -55,7 +55,7 @@ I started recording (almost) weekly live-streams for our supporters, which is so
 
 At the same time the money from supporters made it possible to "buy" more time from the rest of the team and it's so great to work on Kirby 3 all together.
 
-But we also managed to get a lot more continuity into our release cycle for Kirby 2 and release a new version every months for more than 6 months in a row.
+But we also managed to get a lot more continuity into our release cycle for Kirby 2 and released a new version every month for more than 6 months in a row.
 
 We also just published our **(link: https://getkirby.com/#kosmos text: 18th Kirby Kosmos issue)** and Sonja is really rocking each issue.
 
@@ -67,7 +67,7 @@ I can't stress enough how deeply thankful I am for all of this. It wouldn't be p
 
 Of course it also wouldn't be possible without my wonderful team: Sonja, Lukas, Nico, Fabian and Nils!
 
-Finally I'm so greatful that my wife took this step with me as well and always believed that it won't lead us into chaos <3
+Finally I'm so grateful that my wife took this step with me as well and always believed that it won't lead us into chaos <3
 
 Thank you all for your support!
 
@@ -78,6 +78,3 @@ Enjoy the last days of 2017 with your families and friends and have a great star
 P.S. Here comes the nasty business part: We are running the last sale of this year. You get a massive **(link: https://sites.fastspring.com/openwe/instant/kirby2-professional text: 30% discount on pro licenses)** until December 15th. All those licenses **will be upgraded to Kirby 3 for free!**
 
 You can also still sign up for our **(link: next text: supporter packages)** and follow the journey until the launch of Kirby 3.
-
-
-
