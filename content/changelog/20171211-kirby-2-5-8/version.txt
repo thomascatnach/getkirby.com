@@ -17,7 +17,6 @@ Text:
 - Added support for unsaved changes temporary storage to the site options page [#1105](https://github.com/getkirby/panel/issues/1105)
 - If the (sheet: panel-fields/checkbox) field is set to `disabled` and/or `readonly`, it is now properly disabled [#1118](https://github.com/getkirby/panel/issues/1118)
 - Ensure that content is saved in the correct language in multilang sites [#1125](https://github.com/getkirby/panel/pull/1125)
-- Proper loading indication while forms are being submitted: Prevents submitting forms multiple times
 - Restored the functionality of the (sheet: panel-fields/textarea) field's formatting buttons [#1126](https://github.com/getkirby/panel/pull/1126)
 - Restored compatibility with PHP 5.4 [#1124](https://github.com/getkirby/panel/issues/1124)
 
