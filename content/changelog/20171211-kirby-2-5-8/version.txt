@@ -23,6 +23,7 @@ Text:
 ## Kirby
 
 - Custom Markdown and Smartypants parser components now have access to the `Field` object [#611](https://github.com/getkirby/kirby/pull/611)
+- Fixed a regression that broke route detection for URLs with trailing slashes. [#259](https://github.com/getkirby/toolkit/issues/259#issuecomment-350852944)
 
 ## Toolkit
 
