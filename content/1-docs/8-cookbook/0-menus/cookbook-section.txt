@@ -119,6 +119,8 @@ if($items and $items->count()):
 
 ## Tree menu
 
+The recursive `treemenu`snippet renders a menu of all your site's pages and subpages.
+
 ```php
 <?php if(!isset($subpages)) $subpages = $site->children() ?>
 <ul>
@@ -133,6 +135,29 @@ if($items and $items->count()):
 </ul>
 ```
 
+### Usage
+
+- Save the code as `treemenu.php` in the `/site/snippets` folder. This is important, if you just include the code in your template, it won't work, because the snippet is called from within the snippet.
+
+- Include it your code like this:
+
+    ```
+    <?php snippet('treemenu') ?>
+    ```
+
+- If you don't want it to start from the first level give it a set of pages, where it should start. i.e.:
+
+    ```
+    <?
+
+    // get the first set of subpages which should be used
+    $subpages = $pages->find('about-us')->children();
+
+    // create the snippet beginning with those subpages
+    snippet('treemenu', array('subpages' => $subpages));
+
+    ?>
+    ```
 ****
 
 ## Nested menu
