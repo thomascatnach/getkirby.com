@@ -137,7 +137,7 @@ The recursive `treemenu`snippet renders a menu of all your site's pages and subp
 
 ### Usage
 
-- Save the code as `treemenu.php` in the `/site/snippets` folder. This is important, if you just include the code in your template, it won't work, because the snippet is called from within the snippet.
+- Save the code as `treemenu.php` in the `/site/snippets` folder. Saving it as a snippet and with this exact name is key in this case. If you just include the code in your template or if you rename the snippet, it won't work, because the snippet is called from within the snippet.
 
 - Include it your code like this:
 
