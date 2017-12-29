@@ -21,16 +21,17 @@ Text:
 
 ## Possible parameters/defaults
 
-```
+```php
 $defaults = array(
   'minlength' => 2,
   'fields'    => array(),
   'words'     => false,
   'score'     => array()
 );
-```  
+```
 
 ## Example
+
 
 ```php
 // search the entire site
@@ -50,5 +51,4 @@ $results = $site->search('my awesome->search', array('words' => true));
 
 // feed the search with a get parameter -> http://yourdomain.com/?q=awesome
 $results = $site->search(get('q'));
-
 ```
