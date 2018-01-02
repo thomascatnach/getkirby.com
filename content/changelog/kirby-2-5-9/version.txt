@@ -25,9 +25,9 @@ Text:
 
 ## Toolkit
 
-- Refactored the (toolkit: collection/sort-by) method for compatibility with locale strings (e.g. accented characters) [#266](https://github.com/getkirby/toolkit/issues/266)
+- Refactored the (toolkit: collection/sort-by) method for compatibility with non-ASCII strings (e.g. accented characters) [#266](https://github.com/getkirby/toolkit/issues/266)
 - The (toolkit: url/idn) and (toolkit: url/un-idn) methods now use a userspace Punycode library instead of the built-in PHP functions to improve compatibility with hosting providers [#268](https://github.com/getkirby/toolkit/issues/268)
 - The session cookie is no longer set twice by accident [#267](https://github.com/getkirby/toolkit/issues/267)
-- Refactored the (toolkit: url/is-absolute) method so that other protocols and `mailto:` URLs are supported as well [#623](https://github.com/getkirby/kirby/issues/623)
+- Refactored the (toolkit: url/isabsolute) method so that other protocols and `mailto:` URLs are supported as well [#623](https://github.com/getkirby/kirby/issues/623)
 - (toolkit: str/widont) now works with strings containing UTF-8 characters [#265](https://github.com/getkirby/toolkit/pull/265)
 - Updated the Spyc (YAML) and SimpleImage libraries [#1122](https://github.com/getkirby/panel/issues/1122)
