@@ -6,7 +6,7 @@ Excerpt: Redirects the user to a new URL
 
 ----
 
-Call: redirect::send($url = false, $code = false, $send = true)
+Call: redirect::send($url = false, $code = 302, $send = true)
 
 ----
 

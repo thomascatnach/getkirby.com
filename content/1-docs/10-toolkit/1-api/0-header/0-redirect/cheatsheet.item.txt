@@ -6,7 +6,7 @@ Excerpt: Sends a redirect header
 
 ----
 
-Call: header::redirect($url, $code = 301, $send = true)
+Call: header::redirect($url, $code = 302, $send = true)
 
 ----
 
