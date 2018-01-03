@@ -100,6 +100,7 @@ return function($site, $pages, $page) {
 
   $projects = $page->children()->visible();
   $count    = $projects->count();
+  $more     = false;
 
   // check if the request is an Ajax request and if the limit and offset keys are set
   if(r::ajax() && get('offset') && get('limit')) {
@@ -242,6 +243,8 @@ Let's go through this step by step:
     ```
 
     We get the `limit` and the base part of the `url` variables from the data attributes we defined in the `projects.php` template above. Note that we add the `json` suffix to the URL, so that our JSON content representation will be fetched instead of the standard template.
+
+    **Note**: When using this code on your homepage, add a slash to value of the `url` variable: `var url     = element.data('page') + '/.json';`
 
 2. We add the event listener, which is triggered when the `load-more` button is clicked.
 
