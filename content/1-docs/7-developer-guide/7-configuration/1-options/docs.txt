@@ -44,6 +44,7 @@ Kirby has a built-in way to set different options based on the domain by adding 
 /site/config/config.localhost.php
 /site/config/config.staging.yourdomain.com.php
 /site/config/config.yourdomain.com.php
+/site/config/config.www.yourdomain.com.php
 ```
 
 By setting different options in those config files you get a very flexible system, which can be deployed to different servers and react to the current environment accordingly.
