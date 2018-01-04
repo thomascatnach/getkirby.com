@@ -10,7 +10,7 @@ Category: content structure
 
 ----
 
-Description: In this cookbook recipe we will look into how you can use Kirby's API to sort and group content like articles or events. 
+Description: In this cookbook recipe we will look into how you can use Kirby's API to sort and group content like articles or events.
 
 ----
 
@@ -81,7 +81,7 @@ fields:
         type: date
       location:
         label: Event location
-        type: text  
+        type: text
 ```
 
 Let's fetch the events, sort them by date and loop through them to output their content.
@@ -95,11 +95,65 @@ foreach($sortedEvents as $event): ?>
   <span><?= $event->date('Y-m-d') ?></span>
   <h2><?= $event->title()->html() ?></h2>
   <?= $event->location()->kirbytext() ?>
-<?php endforeach ?>    
-``` 
+<?php endforeach ?>
+```
 
 If you use `yaml()` to create an array of events instead of a collection, and you want to sort that array, you can use the [`a::sort()`](../toolkit/api/a/sort) method from the toolkit, or check out the (link: http://php.net/manual/de/array.sorting.php text: different ways to sort arrays ) in the PHP manual.
-        
+
+## Custom sorting
+
+Let's look at a sorting scenario that is beyond the usual sorting possibilities. Consider a structure field like in this blueprint:
+
+```
+# example-blueprint.yml
+products:
+  label: products
+  type: structure
+  fields:
+    productname:
+      label: Product Name
+      type: text
+    size:
+      label: Size
+      type: text
+
+```
+Now, instead of numbers, our sizes field contains sizes like `S, M, L, XL, XXL` etc. Obviously, we cannot sort them alphabetically or otherwise, because they have no inherent order. So, what can we do? The solution here is to map a sorting value to every real value using the `map()` method.
+
+```php
+<?php
+// fetch the products from the structure field
+$products = $page->products()->structure();
+
+// map an order field to each item of the collection
+$products = $products->map(function($item) {
+
+    // array that maps every real value to a sorting number
+    $sizes = ['S'=>'0','M'=>'1','L'=>'2','XL'=>'3', 'XXL'=>'4'];
+
+    //get the order number from the array based on the item's size value
+    $item->order = $sizes[$item->size()->value()];
+
+    return $item;
+});
+
+// finally, sort by order
+
+$products = $products->sortBy('order', 'asc');
+
+```
+Of course, we can write all that stuff a bit shorter:
+
+```php
+$products = $page->products()->structure()->map(function($item) {
+    $sizes = ['S'=>'0','M'=>'1','L'=>'2','XL'=>'3', 'XXL'=>'4'];;
+    $item->order = $sizes[$item->size()->value()];
+    return $item;
+})->sortBy('order', 'asc');
+
+dump($products);
+```
+
 ## Simple grouping by field values
 
 The most straighforward way to group collections is by using the `groupBy()` method. Let's suppose our collection of projects had a year field like in the Kirby Starterkit and we want to group these projects by year.
@@ -193,7 +247,7 @@ $groups = $page->children()->visible()->group(function($article) {
 
 <?php foreach($groups as $description => $items): ?>
   <h2><?php echo $description ?></h2>
-  
+
   <?php foreach($items->sortBy('clicks', 'desc') as $item): ?>
     <h2><?= $item->title()->html() ?></h2>
   <?php endforeach ?>
@@ -256,14 +310,14 @@ $collection = $page->siblings()->files();
 Collection Object
 (
     [projects/project-a/closeup.jpg] => File Object
-        (...) 
+        (...)
     [projects/project-a/creative-tools.jpg] => File Object
         (...)
     [projects/project-a/folding-rule.jpg] => File Object
         (...)
-)      
+)
 */
-```  
+```
 
 In the first case, we can't use `group()` or `groupBy()`. In the second case, we can. An example:
 
@@ -274,13 +328,13 @@ $groupedFiles = $page->siblings()->images()->filterBy('category', '!=', '')->gro
 // loop through the collection and output the category name
 foreach($groupedFiles as $category => $images): ?>
   <h2><?= $category ?></h2>
-  <?php 
+  <?php
     // loop through the images
-    foreach($images as $image): ?> 
+    foreach($images as $image): ?>
     <img src="<?= $image->url() ?>" alt="">
   <?php endforeach ?>
 <?php endforeach ?>
-```    
+```
 
 The `group()`with callback example works in the same way as with page collections. An example:
 
@@ -291,43 +345,16 @@ $callback = function($f) {
     return $f->date('Y');
   } else {
     return 'undated';
-  }  
+  }
 };
 $groupedFiles = page('projects')->children()->files()->group($callback);
 
 foreach($groupedFiles as $year => $images): ?>
   <h2><?= $year ?></h2>
-  <?php 
+  <?php
     // loop through the images
-    foreach($images as $image): ?> 
+    foreach($images as $image): ?>
     <img src="<?= $image->url() ?>" alt="">
   <?php endforeach ?>
 <?php endforeach ?>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
