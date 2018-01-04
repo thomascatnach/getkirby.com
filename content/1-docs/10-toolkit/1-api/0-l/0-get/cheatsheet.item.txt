@@ -2,16 +2,28 @@ Title: l::get
 
 ----
 
-Excerpt: 
+Excerpt:
 
 ----
 
-Call: l::get($key = null, $default = null)
+Call: l::get($key = null, $data = null, $locale = null)
 
 ----
 
-Return: 
+Return:
 
 ----
 
-Params: 
+Params:
+
+
+----
+
+Example:
+
+```php
+l::set('some string', 'The {animal} is cute');
+
+l::get('some string', ['animal' => 'cat']);
+# -> The cat is cute
+```
