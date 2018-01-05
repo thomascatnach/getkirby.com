@@ -26,7 +26,9 @@ Text:
 
 ## Toolkit
 
+- Added the (toolkit: str/replace) method
 - Refactored the (toolkit: collection/sort-by) method for compatibility with non-ASCII strings (e.g. accented characters) [#266](https://github.com/getkirby/toolkit/issues/266)
+- Refactored the (toolkit: a/merge) method: elements with numeric keys are now appended by default
 - The (toolkit: url/idn) and (toolkit: url/un-idn) methods now use a userspace Punycode library instead of the built-in PHP functions to improve compatibility with hosting providers [#268](https://github.com/getkirby/toolkit/issues/268)
 - The session cookie is no longer set twice by accident [#267](https://github.com/getkirby/toolkit/issues/267)
 - Refactored the (toolkit: url/isabsolute) method so that other protocols and `mailto:` URLs are supported as well [#623](https://github.com/getkirby/kirby/issues/623)

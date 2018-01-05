@@ -1,0 +1,61 @@
+Title: str::replace
+
+----
+
+Since: 2.5.9
+
+----
+
+Excerpt: Replaces all or some occurrences of the search string with the replacement string. Extension of the str_replace() function in PHP with an additional $limit parameter.
+
+----
+
+Call: str::replace($string, $search, $replace, $limit = -1)
+
+----
+
+Return:
+
+type: string|array
+text: String with replaced values; if $string is an array, array of strings
+
+----
+
+Params: -
+  name: $string
+  type: string|array
+  text: String being replaced on (haystack); can be an array of multiple subject strings
+-
+  name: $search
+  type: string|array
+  text: Value being searched for (needle)
+-
+  name: $replace
+  type: string|array
+  text: Value to replace matches with
+-
+  name: $limit
+  type: int|array
+  text: Maximum possible replacements for each search value; multiple limits for each search value are supported; defaults to no limit
+
+----
+Text:
+
+## Example
+
+```php
+<?php
+
+echo str::replace('some string', 'some', 'other');
+
+// output: other string
+```
+
+```php
+<?php
+
+// only replace two times
+echo str::replace('abcabcabc', 'a', '!', 2);
+
+// output: !bc!bcabc
+```

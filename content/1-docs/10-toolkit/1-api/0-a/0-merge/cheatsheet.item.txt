@@ -6,7 +6,7 @@ Excerpt: Merges arrays recursively
 
 ----
 
-Call: a::merge($array1, $array2)
+Call: a::merge($array1, $array2, $append = true)
 
 ----
 
@@ -23,6 +23,13 @@ Params: -
   name: $array2
   type: array
   text:
+-
+  name: $append
+  type: boolean
+  text: |
+    Behavior for elements with numeric keys;
+    if true: elements are appended, keys are reset;
+    if false: elements are overwritten, keys are preserved
 
 ----
 
@@ -30,33 +37,130 @@ Text:
 
 ## Example
 
+### Simple example
+
 ```php
 <?php
-$array1 = array(
-  1 => 'cat',
-  2 => 'dog',
-  3 => 'bird',
-);
+$array1 = [
+  0 => 'cat',
+  1 => 'dog',
+  2 => 'bird',
+];
 
-$array2 = array(
+$array2 = [
   'a' => 'elephant',
   'b' => 'kangaroo',
   'c' => 'hippopotamus',
-);
+];
+
 $merged = a::merge($array1, $array2);
-
 var_dump($merged);
-
 ```
 
-Result:
+**Result:**
 
 ```text
 array
-  1   =>  'cat'
-  2   =>  'dog'
-  3   =>  'bird'
-  'a' =>  'elephant'
-  'b' =>  'kangaroo'
-  'c' =>  'hippopotamus'
+  0   => 'cat'
+  1   => 'dog'
+  2   => 'bird'
+  'a' => 'elephant'
+  'b' => 'kangaroo'
+  'c' => 'hippopotamus'
+```
+
+### Appending values
+
+If the `$append` param is set to `true` (default), elements with numeric keys are appended and not overwritten:
+
+```php
+<?php
+$array1 = [
+  1 => 'cat',
+  2 => 'dog',
+  3 => 'bird',
+];
+
+$array2 = [
+  1 => 'elephant',
+  2 => 'kangaroo',
+  3 => 'hippopotamus',
+];
+
+$merged = a::merge($array1, $array2);
+var_dump($merged);
+```
+
+**Result:**
+
+```text
+array
+  0 => 'cat'
+  1 => 'dog'
+  2 => 'bird'
+  3 => 'elephant'
+  4 => 'kangaroo'
+  5 => 'hippopotamus'
+```
+
+The resulting numeric keys are renumbered.
+
+### Overwriting values
+
+```php
+<?php
+$array1 = [
+  1 => 'cat',
+  2 => 'dog',
+  3 => 'bird',
+];
+
+$array2 = [
+  1 => 'elephant',
+  2 => 'kangaroo',
+  3 => 'hippopotamus',
+];
+
+$merged = a::merge($array1, $array2, false);
+var_dump($merged);
+```
+
+**Result:**
+
+```text
+array
+  1 => 'elephant'
+  2 => 'kangaroo'
+  3 => 'hippopotamus'
+```
+
+### Recursive merging
+
+If both arrays have an element of type array for the same key, the merging will be done recursively:
+
+```php
+<?php
+$array1 = [
+  'animals' => ['cat', 'dog', 'bird']
+];
+
+$array2 = [
+  'animals' => ['elephant', 'kangaroo', 'hippopotamus']
+];
+
+$merged = a::merge($array1, $array2);
+var_dump($merged);
+```
+
+**Result:**
+
+```text
+array
+  'animals' => array
+    0 => 'cat'
+    1 => 'dog'
+    2 => 'bird'
+    3 => 'elephant'
+    4 => 'kangaroo'
+    5 => 'hippopotamus'
 ```
