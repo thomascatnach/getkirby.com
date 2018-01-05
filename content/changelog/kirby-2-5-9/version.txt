@@ -12,6 +12,10 @@ Download:
 
 Text:
 
+Kirby 2.5.9 is mainly a bug fix release. We also started to refactor important and complex Toolkit methods. And while we were at it, we added some smaller features. Enjoy!
+
+---
+
 ## Panel
 
 - Fixed the structure field's temporary data store in multilang sites [#1123](https://github.com/getkirby/panel/issues/1123)
