@@ -12,13 +12,14 @@ Download:
 
 Text:
 
-Kirby 2.5.9 is mainly a bug fix release. We also started to refactor important and complex Toolkit methods. And while we were at it, we added some smaller features. Enjoy!
+Kirby 2.5.9 is mainly a bug fix release. We also started to refactor some important Toolkit methods. And while we were at it, we added some smaller features. Enjoy!
 
 ---
 
 ## Panel
 
 - Fixed the structure field's temporary data store in multilang sites [#1123](https://github.com/getkirby/panel/issues/1123)
+- Proper loading indication while forms are being submitted: Prevents submitting forms multiple times
 - Fixed an error that would occur when using `pages: false` in the site blueprint [#1112](https://github.com/getkirby/panel/issues/1112)
 - Command- or control-clicking on a link in the Panel is now respected and opens the destination in a new tab [#1130](https://github.com/getkirby/panel/pull/1130)
 
