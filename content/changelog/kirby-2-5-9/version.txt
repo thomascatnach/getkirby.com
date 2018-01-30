@@ -40,4 +40,4 @@ Kirby 2.5.9 is mainly a bug fix release. We also started to refactor some import
 - Redirects with (toolkit: helpers/go) now properly default to HTTP 302 instead of to HTTP 500 (which was previously corrected by the web server to HTTP 302) [#624](https://github.com/getkirby/kirby/issues/624)
 - Redirects with (toolkit: header/redirect) now also default to HTTP 302 instead of HTTP 301 for consistency [#624](https://github.com/getkirby/kirby/issues/624)
 - (toolkit: str/widont) now works with strings containing UTF-8 characters [#265](https://github.com/getkirby/toolkit/pull/265)
-- Updated the Spyc (YAML) and SimpleImage libraries [#1122](https://github.com/getkirby/panel/issues/1122)
+- Updated the SimpleImage library [#1122](https://github.com/getkirby/panel/issues/1122)
