@@ -29,6 +29,7 @@ Kirby 2.5.9 is mainly a bug fix release. We also started to refactor some import
 - Language detection does not fire anymore when deliberately switching languages on sites with no language at the domain root [#610](https://github.com/getkirby/kirby/issues/610)
 - The redirect for the (sheet: options/ssl) option is now a permanent HTTP 301 one [#624](https://github.com/getkirby/kirby/issues/624)
 - Fixed a regression that would break custom Smartypants components [#622](https://github.com/getkirby/kirby/issues/622)
+- Make sure that the `height` option is always set for thumb creation by (sheet: file/crop) even if not passed to it by the user
 
 ## Toolkit
 
