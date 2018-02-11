@@ -99,7 +99,7 @@ fields:
 
 
 ## Field instructions
-Sometimes it is helpful to add some instrunctions to explain how a field is being used. You can add some helping words by including a `help:` line to your field specification in the blueprint, e.g.
+Sometimes it is helpful to add some instructions to explain how a field is being used. You can add some helping words by including a `help:` line to your field specification in the blueprint, e.g.
 
 ```
 fields:
