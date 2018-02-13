@@ -17,7 +17,8 @@ Params: -
 -
   name: $default
   type: string
-  text: Default image (default: "mystery-man")
+  text: >
+    Default image (default: "mystery-man")
 
 ----
 
