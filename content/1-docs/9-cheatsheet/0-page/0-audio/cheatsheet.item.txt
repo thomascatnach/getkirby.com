@@ -27,3 +27,14 @@ Text:
 </audio>
 <?php endforeach ?>
 ```
+
+## What is an audio file?
+
+Kirby considers the following file types as audio files: 
+
+- mp3
+- m4a
+- wav
+- aif
+- aiff
+- midi
