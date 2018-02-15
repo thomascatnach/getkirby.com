@@ -30,3 +30,23 @@ if($page->hasImages()) {
 }
 ?>
 ```
+
+
+## What is an image file?
+
+Kirby considers the following file types as images:
+
+- jpeg
+- jpg
+- jpe
+- gif
+- png
+- svg
+- ico
+- tif
+- tiff
+- bmp
+- psd
+- ai
+- eps
+- ps
