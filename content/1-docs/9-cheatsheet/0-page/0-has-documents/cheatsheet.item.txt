@@ -30,3 +30,26 @@ if($page->hasDocuments()) {
 }
 ?>
 ```
+
+## What is a document file?
+
+Kirby considers the following file types as document:
+
+- text
+- mdown
+- md
+- markdown
+- pdf
+- doc
+- docx
+- dotx
+- word
+- xl
+- xls
+- xlsx
+- xltx
+- ppt
+- pptx
+- csv
+- rtf
+- rtx
