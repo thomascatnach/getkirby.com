@@ -30,6 +30,17 @@ Text:
 ```php
 <?php
 $array = $page->toArray();
-a::show($array);
- ?>
+var_dump($array);
+```
+
+## With a callback
+
+```php
+<?php 
+$array = $page->toArray(function ($page) {
+  return [
+    'id' => $page->id(),
+  ];
+});
+var_dump($array);
 ```
