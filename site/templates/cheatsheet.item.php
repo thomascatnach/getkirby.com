@@ -40,7 +40,7 @@
         <?php endif ?>
       </ul>
       <?php endif ?>
-      
+
       <?php if($page->hasInheritingParent() && $page->inheritingParent()->extendingMode() == 'inherits'): ?>
       <p class="zeta">This documentation entry is inherited from the <a href="<?php echo $page->parent()->url() ?>"><?php echo ($class = $page->parent()->class())? $class : $page->parent()->title() ?> class</a>.</p>
       <?php endif ?>
@@ -55,6 +55,13 @@
         <?php endforeach ?>
       </figure>
       <?php endif ?>
+
+      <hr>
+
+      <div class="subtitle">
+        Is something missing or incorrect? <a href="https://github.com/getkirby/getkirby.com/edit/master/content/<?= $page->diruri() ?>/<?= $page->intendedTemplate() ?>.txt">Edit this page on Github…</a>
+      </div>
+
     </section>
 
     <nav class="sidebar col-2-6 last">
@@ -73,6 +80,7 @@
         <li><a href="<?php echo $overviewPage->url() ?>#<?php echo $page->inheritingParent()->uid() ?>"><small>&darr;</small>Back to <?php echo $overviewPage->title() ?> section</a></li>
       </ul>
     </nav>
+
 
   </main>
 
