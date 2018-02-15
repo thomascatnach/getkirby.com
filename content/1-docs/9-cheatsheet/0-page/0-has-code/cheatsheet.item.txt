@@ -6,7 +6,7 @@ Title:
 
 Excerpt:
 
-Checks if there are any audio files in the page's directory
+Checks if there are any code files in the page's directory
 
 ----
 
@@ -30,3 +30,17 @@ if($page->hasCode()) {
 }
 ?>
 ```
+
+## What is a code file?
+
+Kirby considers the following file types as code: 
+
+- js
+- css
+- scss
+- rb
+- xml
+- json
+- java
+
+Any html or php files cannot be uploaded to pages for security reasons. 
