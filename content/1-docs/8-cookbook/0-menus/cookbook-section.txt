@@ -29,7 +29,7 @@ if($items->count()):
 <nav>
   <ul>
     <?php foreach($items as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
+    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
     <?php endforeach ?>
   </ul>
 </nav>
@@ -61,7 +61,7 @@ if($items and $items->count()):
 <nav>
   <ul>
     <?php foreach($items as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
+    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
     <?php endforeach ?>
   </ul>
 </nav>
@@ -94,7 +94,7 @@ if($items and $items->count()):
 <nav>
   <ul>
     <?php foreach($items as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
+    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
     <?php endforeach ?>
   </ul>
 </nav>
@@ -109,7 +109,7 @@ if($items and $items->count()):
 <nav>
   <ul>
     <?php foreach($site->breadcrumb() AS $crumb): ?>
-    <li<?php e($crumb->isActive(), ' class="is-active"') ?>><a href="<?php echo $crumb->url() ?>"><?php echo $crumb->title()->html() ?></a></li>
+    <li<?php e($crumb->isActive(), ' class="is-active"') ?>><a href="<?= $crumb->url() ?>"><?= $crumb->title()->html() ?></a></li>
     <?php endforeach; ?>
   </ul>
 </nav>
@@ -125,8 +125,8 @@ The recursive `treemenu`snippet renders a menu of all your site's pages and subp
 <?php if(!isset($subpages)) $subpages = $site->children() ?>
 <ul>
   <?php foreach($subpages->visible() AS $p): ?>
-  <li class="depth-<?php echo $p->depth() ?>">
-    <a<?php e($p->isActive(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+  <li class="depth-<?= $p->depth() ?>">
+    <a<?php e($p->isActive(), ' class="active"') ?> href="<?= $p->url() ?>"><?= $p->title()->html() ?></a>
     <?php if($p->hasChildren()): ?>
     <?php snippet('treemenu', array('subpages' => $p->children())) ?>
     <?php endif ?>
@@ -141,14 +141,14 @@ The recursive `treemenu`snippet renders a menu of all your site's pages and subp
 
 - Include it your code like this:
 
-    ```
+    ```php
     <?php snippet('treemenu') ?>
     ```
 
 - If you don't want it to start from the first level give it a set of pages, where it should start. i.e.:
 
-    ```
-    <?
+    ```php
+    <?php
 
     // get the first set of subpages which should be used
     $subpages = $pages->find('about-us')->children();
@@ -176,7 +176,7 @@ if($items->count()):
   <ul>
     <?php foreach($items as $item): ?>
     <li>
-      <a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a>
+      <a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
 
       <?php
 
@@ -189,7 +189,7 @@ if($items->count()):
       ?>
       <ul>
         <?php foreach($children as $child): ?>
-        <li><a<?php e($child->isOpen(), ' class="active"') ?> href="<?php echo $child->url() ?>"><?php echo $child->title()->html() ?></a></li>
+        <li><a<?php e($child->isOpen(), ' class="active"') ?> href="<?= $child->url() ?>"><?= $child->title()->html() ?></a></li>
         <?php endforeach ?>
       </ul>
       <?php endif ?>
@@ -218,7 +218,7 @@ if($items and $items->count()):
 <nav>
   <ul>
     <?php foreach($items as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
+    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
     <?php endforeach ?>
   </ul>
 </nav>
@@ -241,7 +241,7 @@ if($items->count()):
 ?>
 <select onchange="window.location.href = this.value">
   <?php foreach($items as $item): ?>
-  <option value="<?php echo $item->url() ?>"<?php e($item->isOpen(), ' selected="selected"') ?>><?php echo $item->title()->html() ?></option>
+  <option value="<?= $item->url() ?>"<?php e($item->isOpen(), ' selected="selected"') ?>><?= $item->title()->html() ?></option>
   <?php endforeach ?>
 </select>
 <?php endif ?>
@@ -253,14 +253,14 @@ All the examples above are pretty raw. You probably want to add additional class
 
 ### Dedicated CSS selectors
 
-It's often needed to style particular items in a menu without touching the others – for example if you want to add icons. This can be done by adding dedicated selectors:
+It's often necessary to style particular items in a menu without touching the others – for example if you want to add icons. This can be done by adding dedicated selectors:
 
 #### in your menu template
 
 ```php
 <nav>
   …
-  <li class="<?php echo $item->uid() ?>"><a<?php ecco($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
+  <li class="<?= $item->uid() ?>"><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
   …
 </nav>
 ```
@@ -287,7 +287,7 @@ Especially in nested menus it can be helpful to have an additional selector, whi
 ```php
 <nav>
   …
-  <li class="depth-<?php echo $item->depth() ?>"><a<?php ecco($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
+  <li class="depth-<?= $item->depth() ?>"><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
   …
 </nav>
 ```
@@ -302,4 +302,4 @@ nav .depth-2 {
 
 #### The entire API
 
-Of course this is only a minimal extract of possibilities. The entire Kirby API is there to get the most out of your ideas, so check out the (link: docs/cheatsheet text: Kirby Cheat Sheet) for additional methods you can use and have fun with your next project.
+Of course this is only a minimal extract of all possibilities. The entire Kirby API is there to get the most out of your ideas, so check out the (link: docs/cheatsheet text: Kirby Cheat Sheet) for additional methods you can use and have fun with your next project.
