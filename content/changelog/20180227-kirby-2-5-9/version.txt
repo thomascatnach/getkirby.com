@@ -1,12 +1,12 @@
-Title: Kirby 2.5.9 RC-2
+Title: Kirby 2.5.9
 
 ----
 
-Date: 2018-02-14
+Date: 2018-02-27
 
 ----
 
-Download: https://download.getkirby.com/rc/kirby-2.5.9-RC-2.zip
+Download: https://download.getkirby.com/kirby-2.5.9.zip
 
 
 ----
