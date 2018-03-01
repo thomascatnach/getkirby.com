@@ -47,6 +47,18 @@ fields:
     separator: /
 ```
 
+### Usage Example
+You can use the `split()` method to make each tag an individual object. 
+```
+<?php $tags = $article->tags()->split(); ?>
+<ul>
+<?php foreach($tags as $tag): ?>
+  //change link to page that lists all articles if necessary
+  <li><a href="<?php echo url('blog/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a></li>
+<?php endforeach ?>
+</ul>
+```
+
 ### Index
 
 The index option gives you full control over displayed suggestions, while the user is typing. By default suggestions will be pulled from the same field of sibling pages.
