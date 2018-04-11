@@ -53,8 +53,8 @@ You can use the `split()` method to make each tag an individual object.
 <?php $tags = $article->tags()->split(); ?>
 <ul>
 <?php foreach($tags as $tag): ?>
-  //change link to page that lists all articles if necessary
-  <li><a href="<?php echo url('blog/tag:' . urlencode($tag)) ?>"><?php echo $tag ?></a></li>
+  <!-- change link to page that lists all articles if necessary -->
+  <li><a href="<?= url('blog/tag:' . urlencode($tag)) ?>"><?= html($tag) ?></a></li>
 <?php endforeach ?>
 </ul>
 ```
